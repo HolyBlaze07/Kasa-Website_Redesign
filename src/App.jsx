@@ -6,6 +6,7 @@ import RentalProperties from "./pages/RentalProperties";
 import Header from "./components/Header";
 import Error from "./components/Error/error.jsx";
 
+
 function App() {
   return (
     <Router>
