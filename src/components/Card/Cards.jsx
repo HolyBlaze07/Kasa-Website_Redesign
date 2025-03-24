@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "../stylesheets/Card.scss"; // Import styles (optional)
+import "../../stylesheets/Card.scss"
 
 const Card = ({ title, cover }) => {
   return (

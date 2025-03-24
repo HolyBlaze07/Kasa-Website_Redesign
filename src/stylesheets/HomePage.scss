@@ -1,0 +1,73 @@
+body {
+  max-width: 1440px;
+  background-color: #ffffff;
+  margin: 43px auto;
+  font-family: Montserrat, sans-serif;
+}
+
+.banner {
+  position: relative;
+  height: 223px;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+  width: 100%;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  color: white;
+  margin: 0;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content:flex-start;
+  margin: 40px 0;
+  background-color: #f6f6f6 ;
+border-radius: 10px;
+  padding: 40px;
+}
+
+
+.card-wrapper {
+  width: calc(33.333% - 13.33px); /* 3 cards per row with space */
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .card-wrapper {
+    width: calc(50% - 10px); /* 2 cards per row on tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .card-wrapper {
+    width: 100%; /* 1 card per row on mobile */
+  }
+}
