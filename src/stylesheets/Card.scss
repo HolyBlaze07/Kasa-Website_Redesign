@@ -16,7 +16,6 @@
 }
 
 .card-image {
-
   height: 100%;
   object-fit: cover;
   display: block;
@@ -28,13 +27,15 @@
   width: 100%;
   padding: 10px;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  height: 100%;
   color: white;
   text-align: left;
 }
 
-
 .card-title {
-  font-family: Montserrat, sans-serif;
+  position: absolute;
+  bottom: 0;
+  font-family: Montserrat;
   font-size: 18px;
   font-weight: 700;
   margin: 0;

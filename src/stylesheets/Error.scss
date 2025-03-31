@@ -1,0 +1,26 @@
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  margin: 100px;
+}
+
+.error-container h1 {
+  font-family: Montserrat;
+  color: #ff6060;
+  font-size: 288px;
+}
+.error-container p {
+  font-family: Montserrat;
+  color: #ff6060;
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+}
+
+.error-link {
+  font-family: Montserrat;
+  color: #000000;
+  font-size: 18px;
+}

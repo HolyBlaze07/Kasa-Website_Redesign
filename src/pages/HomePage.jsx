@@ -1,4 +1,5 @@
 import rentalProperties from "../assets/rental-properties.json";
+import { Link } from "react-router-dom";
 import "../stylesheets/HomePage.scss";
 // Removed unused Header import
 import Card from "../components/Card/Cards.jsx";
@@ -21,11 +22,13 @@ function Home() {
       <div className="card-container">
         {rentalProperties.map((property) => (
           <div className="card-wrapper" key={property.id}>
+            <Link to={`/property/${property.id}`} className="card-link">
             <Card
               title={property.title}
               cover={property.cover}
               location={property.location}
             />
+            </Link>
           </div>
         ))}
       </div>

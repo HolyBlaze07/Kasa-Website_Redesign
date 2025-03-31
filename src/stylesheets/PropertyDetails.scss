@@ -1,0 +1,96 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  max-width: 1440px; 
+}
+.property-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.property-info h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  margin: 0;
+  color: #ff6060;
+}
+
+.left {
+  max-width: 60%;
+}
+
+.location {
+  color: #000000;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+
+  
+}
+
+.tag {
+  background-color: #ff6060;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  border: 1px solid black;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.host {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.host-name {
+  font-size: 0.9rem;
+  text-align: right;
+  font-weight: 600;
+  color: #ff6060;
+  font-size: 18px;
+}
+
+.host-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.rating {
+  display: flex;
+  gap: 5px;
+  color: #ff6060;
+}
+
+.star img {
+  width: 20px;
+  height: 20px;
+}
+
+.collapse-section {
+  margin-top: 40px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  
+}
+
+.collapse-section .collapse {
+  flex: 1;
+  min-width: 300px;
+}
