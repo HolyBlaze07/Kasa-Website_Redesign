@@ -6,6 +6,7 @@ import Collapse from "../components/Collapse";
 import "../stylesheets/PropertyDetails.scss";
 import starInactive from "../assets/images/star-inactive 2.png";
 
+
 const PropertyDetails = () => {
   const { id } = useParams();
   const property = rentalProperties.find((item) => item.id === id);
@@ -49,6 +50,7 @@ const PropertyDetails = () => {
                 className={num <= rating ? "star filled" : "star"}
               >
                 <img src={starInactive} alt="star" />
+                  
               </span>
             ))}
           </div>

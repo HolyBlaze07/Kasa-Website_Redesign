@@ -7,7 +7,7 @@ function Header() {
     <header>
       <nav>
         <img
-          src="../../assets/images/LOGO.svg"
+          src="src/assets/images/LOGO.svg"
           alt="Kasa logo"
           className="kasa-logo"
         />
