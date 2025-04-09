@@ -3,8 +3,17 @@ body {
   background-color: #ffffff;
   margin: 43px auto;
   font-family: "Montserrat", sans-serif;
+  
+  @media (max-width: 768px) {
+    margin: 20px 20px;
+  }
+
+  @media (max-width: 480px) {
+    margin: 10px;
+  }
 }
 
+/* Banner Section */
 .banner {
   position: relative;
   height: 223px;
@@ -20,6 +29,7 @@ body {
   height: 100%;
   display: block;
 }
+
 .overlay {
   position: absolute;
   top: 0;
@@ -31,24 +41,33 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .overlay h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 48px;
-  text-align: center;
   color: white;
   margin: 0;
+  padding: 0 10px;
   text-shadow:
-    /* Black Outline */
     -1px -1px 0 #000,
      1px -1px 0 #000,
     -1px  1px 0 #000,
      1px  1px 0 #000,
-    /* Drop Shadow */
      0 4px 8px rgba(0, 0, 0, 0.6);
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 24px;
+  }
 }
+
+/* Card Container */
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -58,22 +77,28 @@ body {
   background-color: #f6f6f6;
   border-radius: 25px;
   padding: 40px;
-}
 
+  @media (max-width: 768px) {
+    gap: 20px;
+    padding: 20px;
+  }
 
-.card-wrapper {
-  width: calc(33.333% - 40px); /* 3 cards per row with space */
-  margin-bottom: 20px;
-}
-
-@media (max-width: 768px) {
-  .card-wrapper {
-    width: calc(50% - 10px); /* 2 cards per row on tablet */
+  @media (max-width: 480px) {
+    padding: 15px;
+    margin: 30px 0;
   }
 }
 
-@media (max-width: 480px) {
-  .card-wrapper {
-    width: 100%; /* 1 card per row on mobile */
+/* Individual Cards */
+.card-wrapper {
+  width: calc(33.333% - 40px);
+  margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    width: calc(50% - 10px);
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
   }
 }

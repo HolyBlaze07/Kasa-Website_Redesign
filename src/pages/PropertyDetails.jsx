@@ -4,7 +4,6 @@ import rentalProperties from "../assets/rental-properties.json";
 import Slideshow from "../components/Slideshow";
 import Collapse from "../components/Collapse";
 import "../stylesheets/PropertyDetails.scss";
-import starInactive from "../assets/images/star-inactive 2.png";
 
 
 const PropertyDetails = () => {
@@ -16,6 +15,7 @@ const PropertyDetails = () => {
   const rating = parseInt(property.rating); // 🔧 convert to number
 
   return (
+    <div className="container">
     <div className="property-details">
       <Slideshow pictures={property.pictures} />
 
@@ -45,13 +45,11 @@ const PropertyDetails = () => {
 
           <div className="rating">
             {[1, 2, 3, 4, 5].map((num) => (
-              <span
+              <i
                 key={num}
-                className={num <= rating ? "star filled" : "star"}
-              >
-                <img src={starInactive} alt="star" />
-                  
-              </span>
+                className="fa-solid fa-star"
+                style={{ color: num <= rating ? "#FF6060" : "#E3E3E3" }}
+              ></i>
             ))}
           </div>
         </div>
@@ -70,6 +68,7 @@ const PropertyDetails = () => {
           }
         />
       </div>
+    </div>
     </div>
   );
 };
