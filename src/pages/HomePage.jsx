@@ -8,6 +8,7 @@ function Home() {
   console.log(rentalProperties);
   return (
     <div className="home-page">
+    <div className="container">
       <div className="banner">
         <img
           src="src/assets/images/background-image.png"
@@ -32,6 +33,8 @@ function Home() {
           </div>
         ))}
       </div>
+
+    </div>
     </div>
   );
 }

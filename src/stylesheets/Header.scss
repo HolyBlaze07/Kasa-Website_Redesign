@@ -1,15 +1,33 @@
-header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding:30px;
-
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
 }
+
+header{
+  width: 100%;
+  
+
+    
+  }
+
 .container {
   max-width: 1240px;
   margin: 0 auto;
   padding: 0 30px;
   width: 100%;
+
+  @media (max-width: 480px){
+    padding: 0 10px;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
 }
 
 
@@ -18,21 +36,38 @@ header{
   max-width: 200px;
   height: auto;
   display: block;
+
+  @media (max-width: 1240px) {
+    max-width: 150px;
+  }
+
+  @media (max-width: 480px) {
+    max-width: 100px;
+  }
 }
 
-nav  {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
+
 
 ul {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
   gap: 57px;
- 
+
+  @media (max-width: 1240px) {
+    gap: 40px;
+  }
+
+
+  @media (max-width: 480px) {
+    gap: 26px;
+  } 
+}
+
+li{
+  display:flex;
+  align-items: center;
 }
 
 nav a {
@@ -41,6 +76,18 @@ nav a {
   font-family: Montserrat;
   font-size: 24px;
   font-weight: 500;
+
+  @media (max-width: 1240px) {
+    font-size: 18px;
+   
+  }
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+    
+  
+  } 
+
 }
 nav a:hover {
   text-decoration: underline;

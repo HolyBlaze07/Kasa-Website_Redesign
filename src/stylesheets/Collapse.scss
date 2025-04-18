@@ -3,6 +3,7 @@
   background-color: white;
   border-radius: 5px;
   margin-bottom: 30px;
+  overflow: hidden;
  
 }
 
@@ -16,12 +17,17 @@
   align-items: center;
   cursor: pointer;
   line-height: 143%;
+  
 }
 .collapse-header h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 16px;
   padding-left:  10px;
+
+  @media (max-width: 768px){
+    font-size: 13px;
+  }
   
 }
 
@@ -30,6 +36,11 @@
   width: 32px;
   height: 32px;
   transform: rotate(180deg);
+
+  @media (max-width: 768px){
+    width: 16px;
+    height: 16px;
+  }
 }
 
 .collapse-icon.open {
@@ -41,7 +52,16 @@
   background-color: #f6f6f6;
   animation: slideDown 0.3s ease forwards;
   border-radius: 0 0 5px 5px;
-  font-size: 24px; 
+  font-size: 18px;
+  
+
+  @media (max-width: 768px)
+  {
+    font-size: 14px;
+    
+  }
+  
+  
 }
 .collapse-content ul {
   list-style-type: none; 
@@ -50,15 +70,25 @@
   gap: 10px;
   padding: 5px;
   font-size: 24px;
+
+  @media (max-width: 768px)
+  {
+    font-size: 16px;
+    
+  }
 }
 
 @keyframes slideDown {
   from {
     opacity: 0;
-    transform: translateY(-5px);
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   to {
+   max-height: 500px; // or a safe max depending on your content
     opacity: 1;
-    transform: translateY(0);
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
