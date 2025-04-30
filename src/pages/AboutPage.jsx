@@ -1,5 +1,6 @@
 import Collapse from "../components/Collapse";
 import "../stylesheets/AboutPage.scss";
+import aboutBanner from "../assets/images/kalen-emsley-Bkci_8qcdvQ-unsplash 2 (1).png";
 
 const aboutData = [
   {
@@ -37,7 +38,7 @@ function About() {
     <div className="about-page">
       <div className="about-banner">
         <img
-          src="src/assets/images/kalen-emsley-Bkci_8qcdvQ-unsplash 2 (1).png"
+          src={aboutBanner} 
           alt="mountain banner"
           className="about-image"
         />

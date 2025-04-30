@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../stylesheets/HomePage.scss";
 // Removed unused Header import
 import Card from "../components/Card/Cards.jsx";
+import bannerImage from "../assets/images/background-image.png";
 
 function Home() {
   console.log(rentalProperties);
@@ -10,7 +11,7 @@ function Home() {
     <div className="home-page">
       <div className="banner">
         <img
-          src="src/assets/images/background-image.png"
+          src={bannerImage} // ✅ Use imported variable
           alt="a landscape of mountains and body of water"
           className="background-image"
         />
@@ -23,11 +24,11 @@ function Home() {
         {rentalProperties.map((property) => (
           <div className="card-wrapper" key={property.id}>
             <Link to={`/property/${property.id}`} className="card-link">
-            <Card
-              title={property.title}
-              cover={property.cover}
-              location={property.location}
-            />
+              <Card
+                title={property.title}
+                cover={property.cover}
+                location={property.location}
+              />
             </Link>
           </div>
         ))}
