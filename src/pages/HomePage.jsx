@@ -9,6 +9,7 @@ function Home() {
   console.log(rentalProperties);
   return (
     <div className="home-page">
+    <div className="container">
       <div className="banner">
         <img
           src={bannerImage} // ✅ Use imported variable
@@ -33,6 +34,8 @@ function Home() {
           </div>
         ))}
       </div>
+
+    </div>
     </div>
   );
 }
